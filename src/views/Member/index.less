@@ -1,0 +1,442 @@
+/**
+ * 首页
+ */
+.member-index, .member-recharge{
+	.mem-index{
+		margin-top: 0px;
+		img {
+			margin-right: 0px;
+		}
+	}
+	.mem-title{
+		text-align: center;
+	}
+	.member-card{
+		position: relative;
+		//width: 82.93333%;
+		//height: 30%;
+		//margin-left: 8.533335%;
+		width: 86%;
+		height: 32%;
+	    margin-left: 7%;
+	    margin-top: 1.17647059em;
+		.card-logo{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			right: 0;
+		}
+		p{
+			color: #fff;
+		}
+		.member-restaurant, 
+		.member-carno{
+			position: absolute;
+			padding: 18px 25px;
+			font-size: 12px;	
+		}
+		.member-restaurant{
+			img {
+				//width: 40px;
+				width: 3.333333em;
+				padding-right: 10px;
+			}
+			.p1{
+				font-size: 1.333333em;
+			}
+			.p2 {
+				font-size: 1em;
+			}
+		}
+		.member-carno{
+			&:before {
+				border-top: 0;
+			}
+			left: 0;
+			bottom: 0;
+			img {
+				width: 2.75em;
+			}
+			.p3 {
+				font-size: 1.166667em;
+			}
+		}
+	}
+}
+
+/**
+ * 注册 
+ */
+.member-register{
+	.weui-cell_select,
+	.weui-cell_vcode {
+		padding: 0.294228em 15px;
+	}
+	.weui-cells{
+		margin-top: 0px;
+	}
+	.weui-label{
+		width: 80px;
+	}
+	.register-mid{
+		padding-top: 1.17647059em;
+		padding-bottom: 1.764705885em;
+    	background: #f9f9f9;
+	}
+	.head-logo{
+		font-size: 12px;
+		width: 8.666666667em;
+		height: 8.666666667em;
+		margin: 3em auto;
+		padding: 0.625em;
+	    position: relative;
+	    overflow: hidden;
+	    background: #fff;
+	    border: 1px solid #f4f4f4;
+		img.head-img {
+			width: 100%;
+			margin: auto;
+		}
+	}
+	.register-confirm{
+		width: 96%;
+	}
+	.weui-vcode-btn{
+		width: 6.352941176em;
+		padding: 0;
+		text-align: center;
+	}
+	.vcode-normal {
+		color: #999;	
+	}
+}
+
+.weui-icon-warn-no-circle{
+	width: 23px;
+    height: 23px;
+    margin: 20px auto;
+	background-image: url(./images/icon-warn.png);
+	background-size: cover;
+	> p {
+		font-size: 14px;
+	}	
+}
+
+/**
+ * 我的储值
+ */
+.member-stored{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	.title-box {
+		position: relative;
+	    font-size: 16px;
+	    width: 100%;
+	    height: 5.6875em;
+	    background: #1b1d1e;
+	    text-align: center;
+	    color: #fff;
+	    padding-top: 1.5em;
+	    p{
+			font-size: 0.8125em;
+    		opacity: .6;
+	    }
+	    h2{
+			font-size: 2.375em;
+    		font-weight: normal;
+	    }
+	}
+	.stored-list {
+		position: absolute;
+		top: 8.1875em;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		overflow-y: scroll;
+		.weui-cells{
+			margin-top: 0;
+		}
+	}
+	.list-bd {
+		
+	}
+	.list-bd{
+
+	}
+	.rc {
+		font-size: 16px;
+	}
+	.rc-h {
+		font-size: 0.9375em;
+		color: #101010;
+	}
+	.rc-f {
+		font-size: 0.75em;
+		color: #bbb;
+		margin-top: 5px;
+	}
+	.stored-footer{}
+	.store-no-list{
+		font-size: 16px;
+		.no-tips{
+			background-image: url(./images/icon-stored.png);
+			padding-top: 6.0625em;
+		    text-align: center;
+		    background-size: 4.0625em;
+		    background-repeat: no-repeat;
+		    background-position: center 0px;
+		    margin-top: 6em;
+		    color: #ccc;
+		    p{
+		    	font-size: 0.875em;
+		    }	
+		}
+		.stored-footer{
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+
+/**
+ * 账单信息
+ */
+.member-bill {
+	.weui-cells {
+		margin-top: 0;
+	}
+	.bill-title{
+			
+	}
+}
+.bill-list {
+	position: absolute;
+	top: 75px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	.weui-cells {
+		margin-bottom: 1.17647059em;
+	}
+	.bill-ds{
+		.weui-cell{
+			padding: 5px 0;
+			&:first-child {
+				padding-top: 0;
+			}
+			&:last-child{
+				padding-bottom: 0;
+			}
+			&:before{
+				border-top: 0;
+			}
+		}
+		.bill-le {
+			color: #bbb;
+			margin-right: 20px;
+    		letter-spacing: 2px;
+		}
+	}
+}
+
+/**
+ * 账单详情
+ */
+.member-billdetail{
+	padding: 10px 10px 0 10px;
+	> div{
+		border: 1px solid #e5e5e5;
+    	background: #fff;
+	}
+	.bd-title{
+		color: #999;
+		> div:first-child{
+			letter-spacing: 2px;
+			margin-right: 20px;
+		}	
+	}
+	.bd-moeny{
+		text-align: center;
+	    font-size: 2.823529411em;
+	    font-weight: normal;
+	    padding: 0.5em;
+	    p{
+	    	font-size: 14px;
+	    }
+	}
+	.mb-1 .weui-cell{
+		padding: 5px 0;
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child{
+			padding-bottom: 0;
+		}
+		&:before{
+			border-top: 0;
+		}
+		.weui-cell__bd {
+			text-align: right;
+		}
+		.weui-cell__ft{
+			width: 100px;
+			color: inherit;
+			&.real-pay{
+				color: #ff3030;
+			}
+		}
+	}
+	.dishs-list{}
+	.dishs-pay{
+		.db-hd{
+			color: #999;
+		}
+	}
+}
+
+/**
+ * 支付码
+ */
+.member-paycode {
+	position: relative;
+	font-size: 16px;
+	width: 94%;
+	margin-top: 1em;
+	margin-left: 3%;
+	border-radius: 10px;
+	overflow: hidden;
+	.paycode-content{
+		background: #fff;
+		padding: 1em;
+		text-align: center;
+		h2, h4{
+			text-align: center;
+			font-weight: normal;
+		}
+		h2 {
+			font-size: 1.25em;
+			font-weight: normal;
+			color: #191919;
+			strong {
+				font-weight: inherit;
+				color: #ff3030;
+			}
+		}
+		.tiaoma{
+			width: 100%;
+			height: 80px;
+		}
+		h4{
+			font-size: 1em;
+    		margin: 1em;
+		}
+		.erweima {
+			width: 150px;
+		}
+	}
+	footer{
+		width: 100%;
+	    height: 3.125em;
+	    text-align: center;
+	    line-height: 3.125em;
+	    background: #f7f6fb;
+	    color: #666;
+	}
+}
+
+/**
+ * 
+ */
+.member-recharge{
+	> div:first-child{
+		background: #fff;
+		padding-bottom: 1.17647059em;
+	}
+	.balance-msg{
+		margin-top: 0;	
+	}
+	.recharge-ms{
+		background: #fff;
+		overflow: auto;
+		font-size: 16px;
+		h3{
+			font-size: 1em;
+			font-weight: normal;
+			color: #999;
+		    padding-left: 15px;
+			margin-top: 15px;
+		}
+		ul {
+			position:relative;
+			list-style: none;
+			padding: 15px;
+		}
+		li{
+			float: left;
+			width: 31%;
+			background: #f5f5f5;
+			border-radius: 8px;
+			margin-right: 3.5%;
+			margin-bottom: 15px;
+			text-align: center;
+			padding: 0.5em 0;
+			&.active{
+				background: #dedede;
+			}
+			&.li3{
+				margin-right: 0;
+			}
+			p{
+				font-size: 1.25em;
+			}
+			small{
+				font-size: 0.875em;
+				color: #ff3030;
+			}
+		}
+	}
+	.recharge-protocol{
+		font-size: 12px;
+		color: #999;
+		text-align: center;
+		margin: 2em 0 1em;
+	}
+}
+
+/**
+ * member-payonline
+ */
+.member-payonline{
+	.pl-title{
+		margin-top: 0;
+	}
+	.real-pay{
+		color: #ff3030;
+	}
+	.weui-cells_checkbox{
+		margin-bottom: 2em;
+	}
+}
+
+/**
+ * perinfo
+ */
+
+.member-perinfo {
+	.weui-cells_form, .p-form {
+		margin-top: 0;
+	}
+	.weui-cell_select {
+		padding: 0.294228em 15px;
+	}
+	.max-btn {
+		margin-top: 2em;
+	}
+}
